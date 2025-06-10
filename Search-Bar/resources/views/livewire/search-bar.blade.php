@@ -1,3 +1,4 @@
-<div>
-    {{-- Because she competes with no one, no one can compete with her. --}}
+ <div class="search-container">
+        <input type="text" placeholder="Search...">
+         <button type="submit">Search</button>
 </div>

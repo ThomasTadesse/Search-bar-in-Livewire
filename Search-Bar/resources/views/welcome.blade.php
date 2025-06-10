@@ -13,10 +13,8 @@
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
+       @livewire('SearchBar')
+        
     </div>
     
     <div class="content">
