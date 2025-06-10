@@ -1,6 +1,6 @@
-<div id="search-bar" class="position-relative">
+<div id="search-bar" class="search-wrapper">
     <form class="search-container" role="search">
-        <input wire:model="search" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+        <input wire:model.live="search" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
     </form>
     
     @if(strlen($search) >= 1)

@@ -8,30 +8,26 @@ use App\Models\User;
 class SearchBar extends Component
 {
 
+    // This component is used to search for users by name
     public $search = "";
 
-    // Add this updatedSearch method for real-time searching
-    public function updatedSearch()
-    {
-        $this->dispatch('search-updated');
-    }
-
+    // This component listens for changes in the search input provided above
     public function render()
     {
 
         $results = [];
+
         if (strlen($this->search) >= 1) {
-            // querying from database with improved search
-            $results = User::where(function($query) {
-                $query->where('name', 'like', '%' . $this->search . '%')
-                      ->orWhere('email', 'like', '%' . $this->search . '%');
-            })
-            ->limit(7)
-            ->get();
+            // querying from database
+            $results = User::where('name', 
+                                   'like', 
+                                   '%' .$this->search. '%')
+                                    ->limit(7)
+                                    ->get();
         }
 
         // return to the view with the results
-        return view('livewire.search-bar', [
+        return view('livewire.search-bar',[
             'users' => $results
         ]);
     }

@@ -31,87 +31,66 @@
     @livewireScripts
 </body>
 </html>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .navbar-links {
-            display: flex;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 16px;
-            display: block;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        
-        /* Search container styling */
-        .search-wrapper {
-            position: relative;
-            min-width: 250px;
-        }
-        
-        .search-container {
-            display: flex;
-            align-items: center;
-        }
-        
-        .search-container input[type=text] {
-            padding: 6px;
-            border: none;
-            margin-right: 10px;
-            font-size: 17px;
-            width: 100%;
-        }
-        
-        /* Important: Search results styling */
-        .search-results {
-            position: absolute;
-            background-color: white;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            z-index: 1000;
-            max-height: 350px;
-            overflow-y: auto;
-            border: 1px solid #ddd;
-        }
-        
-        .search-result-item:hover {
-            background-color: #f8f9fa;
-        }
-        
-        .content {
-            padding: 20px;
-        }
-        .dropdown-menu {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            width: 100%;
-            margin-top: 5px;
-        }
-        .dropdown-menu .border-bottom {
-            border-bottom: 1px solid #ddd;
-        }
-        .dropdown-menu span {
-            font-weight: bold;
-        }
-        .dropdown-menu small {
-            color: #666;
-        }
-    </style>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #343a40;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navbar-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    
+    .navbar-links a:hover {
+        color: #17a2b8;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .search-wrapper {
+        width: 300px;
+    }
+    
+    .content {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        text-align: center;
+    }
+    
+    .content h1 {
+        color: #343a40;
+        margin-bottom: 1rem;
+    }
+    
+    .content p {
+        color: #6c757d;
+        font-size: 1.1rem;
+    }
+</style>
