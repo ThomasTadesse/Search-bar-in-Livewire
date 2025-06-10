@@ -6,7 +6,7 @@
     @if(strlen($search) >= 1)
         <div class="search-results dropdown-menu d-block position-absolute w-100 py-0">
             <div class="p-2 bg-light border-bottom">
-                Searching for: "{{ $search }}" ({{ count($users) }} results)
+                results for "{{ $search }}" ({{ count($users) }} results)
             </div>
             @if(count($users) > 0)
                 @foreach($users as $user)
